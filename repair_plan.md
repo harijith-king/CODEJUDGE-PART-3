@@ -81,15 +81,3 @@
     | 6 | Duplicates | 1 | DELETE |
 
 **Total: ~28 records need attention**
-
----
-
-## Execution Order
-
-    1. **Update** constraints violations (5 records)
-    2. **Update** status mappings (9 records) — confirm enum values first
-    3. **Swap** contest timestamps (CT005)
-    4. **Move** orphans + out-of-range to staging (10+ records)
-    5. **Verify** emails manually, update as needed
-    6. **Remove** duplicates
-    7. **Validate** all foreign keys after cleanup
